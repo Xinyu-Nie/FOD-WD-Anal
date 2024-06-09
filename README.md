@@ -3,7 +3,7 @@ This is a novel Wasserstein Space-based framework for processing and analyzing t
 Interpolation of FOD functions is achieved through the Barycenter of the newly proposed metric. 
 Besides, we developed a Fast Approximation method for the Wasserstein Barycenter to compute the interpolation efficiently. 
 <br />
-The algorithm was developed in Matlab versions. Please check ***demo.m*** for example usage.  
+The algorithm was developed in Matlab. Please check ***demo.m*** for example usage.  
 <br />
 
 
