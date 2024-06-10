@@ -7,6 +7,7 @@ The algorithm was developed in Matlab. Please check ***Demo.m*** for example usa
 <br />
 <br />
 ***Contribution***
+<br />
 Author: Xinyu Nie
 Created: 2024/6/10
 Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging and Informatics Institute of USC Laboratory of NeuroImaging USC Stevens Neuroimaging and Informatics Institute
