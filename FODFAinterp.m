@@ -2,11 +2,14 @@ function Sphout = FODFAinterp(weight,DecomFOD,peaks,coord,Sorder,SPHARM_Order,R2
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
-%Fast Approxiamtion for FOD interpolation
+%  Fast Approximation for FOD interpolation
+%  'weight' is the weights for interpolation, and 'DecomFOD' is decomposed peak lobes coefficients.
+%  'peaks' are the peaks indices of the peak lobes on the spherical mesh
+
 
 NumPeaks=size(Clusters,2);
 Sph=zeros(Sorder,NumPeaks);
