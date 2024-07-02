@@ -25,7 +25,7 @@ for num = 1:NumPeaks
            Spnumk=SpPk(((nk-1)*Sorder+1):(nk*Sorder));
            Yint(:,k)=Cweights(Pind(k),nk)*Spnumk;
        end
-       Ymean=FODwassbary(coord,Yint,weightk,2,0.05,0.001,0.001);
+       Ymean=FODwassbary(coord,Yint,weightk,2,0.04,0.001,0.001);
        Sph(:,num)=Ymean; 
        end
     end
