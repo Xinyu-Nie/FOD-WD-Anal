@@ -77,6 +77,31 @@ end
 end
 title('Fast Approximation Interpolation')
 
+
+SPHWB=zeros(Sorder,19);
+Points=zeros(19,3);
+t=1;
+for a=0:0.5:1
+    for b=0:0.5:1
+        for c=0:0.5:1
+points=[a b c];
+P=round(points);
+if ~(points(1)==P(1) && points(2)==P(2) && points(3)==P(3))
+    Points(t,:)=points;
+    t=t+1;
+end
+        end
+    end
+end
+
+parfor t=1:19
+points= Points(t,:);
+weights=LinearWeights(points);
+[Clabel,Cweights] = Peaklobesregroup(decomfod,fracvol,Numpeaks,THD,Sorder,coordM);
+Sph = FODWBinterp(weights,decomfod,coordM,Sorder,Clabel,Cweights);  %Wasserstein Barycenter Interpolation
+SPHWB(:,t)=Sph;
+end
+
 figure
 for t=1:8
      y=BS*FODrecon(:,t);
@@ -91,16 +116,15 @@ for t=1:8
      hold on 
 end
 
+t=1;
 for a=0:0.5:1
     for b=0:0.5:1
         for c=0:0.5:1
 points=[a b c];
 P=round(points);
 if ~(points(1)==P(1) && points(2)==P(2) && points(3)==P(3))
-weights=LinearWeights(points);
-[Clabel,Cweights] = Peaklobesregroup(decomfod,fracvol,Numpeaks,THD,Sorder,coordM);
-Sph = FODWBinterp(weights,decomfod,coordM,Sorder,Clabel,Cweights);  %Wasserstein Barycenter Interpolation
-y=BS*Sph;
+y=BS*SPHWB(:,t);
+t=t+1;
 y = max(0,y);
 soln = (coord.*repmat(y,1,3))*0.2;
 color0 = abs(coord)+0.1;
@@ -116,4 +140,3 @@ end
     end
 end
 title('Wasserstein Barycenter Interpolation')
-
