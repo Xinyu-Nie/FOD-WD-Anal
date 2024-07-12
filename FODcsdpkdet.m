@@ -7,6 +7,7 @@ function [DirVol,FracVol,peaks,peakres] = FODcsdpkdet(Y0,BS,THD,NumPeaks,coord,V
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
 
+%'FODcsdpkdet' is the function that detects the peaks of an FOD function based on spherical deconvolution
 %Inputs:
 %'coord' comes from the dense spherical mesh
 %'VertNbronering' is the neighboring structure of the dense mesh
