@@ -4,14 +4,14 @@
 %The first figure is the interpolation by the Fast Approximation.
 %The second figure is the Wasserstein space-based interpolation.
 %Variables:
-%Numpeaks is the maximum number of peak lobes for FOD functions.
+%'Numpeaks' is the maximum number of peak lobes for FOD functions.
 %'Sorder' is the number of coefficients for Spherical Harmonics.
-%'SPHARM_Order' is the highest order of the shperical harmonics. 
+%'SPHARM_Order' is the highest order of the spherical harmonics. 
 % 'R2C1','C2R1','UY90p','UY90n' are matrices used to rotate shperical harmonics.
 %'coord' and 'trg' come from a dense spherical mesh, and 'coordM' and 'trgM'
 % represent a sparse mesh for fast computation.
-%'VertNbr' and 'VertNbronering' are neighboring structures of the dense%mesh.
-%'FODrecon' is the coefficients of the FOD functions
+%'VertNbr' and 'VertNbronering' are neighboring structures of the mesh.
+%'FODrecon' is the spherical harmonics coefficient of the FOD functions
 
 
 load('DATA.mat')
