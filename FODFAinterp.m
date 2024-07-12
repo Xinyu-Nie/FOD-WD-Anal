@@ -15,14 +15,11 @@ function Sphout = FODFAinterp(weight,DecomFOD,peaks,coord,Sorder,SPHARM_Order,R2
 %'coord' comes from the dense spherical mesh
 %'Sorder' is the number of spherical harmonics coefficients 
 %'SPHARM Order' is the highest order of spherical harmonics
+%'R2C1','C2R1','UY90p','UY90n' are matrices used to rotate spherical harmonics
 %'Clusters' and 'Cweights' are the labels and weights for all peak-lobe fields
-
 
 %Outputs:
 %'Sphout' are spherical harmonics coefficients of the interpolated FOD function
-
-
-
 
 
 NumPeaks=size(Clusters,2);
