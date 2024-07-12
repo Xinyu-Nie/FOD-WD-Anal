@@ -2,10 +2,11 @@ function [dist,scaldist]=FODdistfast(Y1,Y2,p,THD,coord)
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
+% Wasserstein Distance bewteen FOD functions
 
 Sorder=length(Y1);
 SPHARM_Order = (sqrt(8*Sorder+1)-3)/2;
