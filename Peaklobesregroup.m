@@ -2,11 +2,22 @@ function [Clabel,Cweights,Cmatrix] = Peaklobesregroup(DecomFOD,FracVol,Numpeak,T
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
-%  FOD peak lobes regroup
+
+%'Peaklobesregroup' is the function that regroups the peak lobes of the FOD functions
+%Inputs:
+%'DecomFOD' are the spherical harmonics coefficients of the peak lobes
+%'FracVol' represents the magnitudes of the peak lobes
+%'Numpeak' is the maximum number of peak lobes for any FOD function
+%'THD' is the cutoff threshold for FPD functions
+%'Sorder' is the number of spherical harmonics coefficients 
+%'coordM' comes from the coarser spherical mesh
+
+%Outputs:
+%'Clabel' and 'Cweights' are the labels and weights for all peak-lobe fields.
 
 Ththeta=46; %Threshold for clustering
 Numpoints=size(FracVol,1);
