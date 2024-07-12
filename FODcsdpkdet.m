@@ -2,10 +2,18 @@ function [DirVol,FracVol,peaks,peakres] = FODcsdpkdet(Y0,BS,THD,NumPeaks,coord,V
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
+
+%Inputs:
+%Y0,
+%BS,
+%THD,
+%NumPeaks,
+%coord,
+%VertNbronering.
 
 DirVol = zeros(3,NumPeaks);
 FracVol = zeros(1,NumPeaks);
