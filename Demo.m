@@ -1,4 +1,4 @@
-%This is a demo to demonstrate the computation of FOD interpolation.
+%This is a demo to demonstrate the processing of FOD functions.
 %All required data is in DATA.mat.
 %The FOD functions are processed with peak detection and decomposition.
 
