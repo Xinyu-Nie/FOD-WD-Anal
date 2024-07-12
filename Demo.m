@@ -1,5 +1,5 @@
 %This is a demo to demonstrate the processing of FOD functions.
-%All required data is in DATA.mat.
+%All required input data is in DATA.mat.
 %The FOD functions are processed with peak detection and decomposition.
 
 %Functions:
