@@ -7,6 +7,18 @@ function SPHARcom = foddecomcstr (SPHARMs,VertNbr,BS,Pks,Pkres,SPHARM_Order,coor
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
 
+%Inputs:
+%'coord' comes from the dense spherical mesh
+%'VertNbronering' is the neighboring structure of the dense mesh
+%'Y0' represents the spherical harmonics coefficients of the FOD function
+%'BS' is the matrix representation of values of spherical harmonics on the dense mesh
+%'THD; is the cutoff threshold for FOD functions
+%'NumPeaks' is the maximum number of FOD peak lobes
+
+%Outputs:
+%'DirVol' and 'FraVol' are the peaks' directions and magnitudes of the FOD function 
+%'peaks' and 'peakres' are the index of the peaks on the spherical mesh
+
 lambda1=10;
 lambda2=10;
 Numpeaks=numel(find(Pks>0));
