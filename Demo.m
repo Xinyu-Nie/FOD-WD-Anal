@@ -1,17 +1,20 @@
 %This is a demo to demonstrate the computation of FOD interpolation.
 %All required data is in DATA.mat.
 %The FOD functions are processed with peak detection and decomposition.
-%The first figure is the interpolation by the Fast Approximation.
-%The second figure is the Wasserstein space-based interpolation.
+
 %Variables:
 %'Numpeaks' is the maximum number of peak lobes for FOD functions.
 %'Sorder' is the number of coefficients for Spherical Harmonics.
-%'SPHARM_Order' is the highest order of the spherical harmonics. 
+%'SPHARM Order' is the highest order of the spherical harmonics. 
 % 'R2C1','C2R1','UY90p','UY90n' are matrices used to rotate shperical harmonics.
-%'coord' and 'trg' come from a dense spherical mesh, and 'coordM' and 'trgM'
-% represent a sparse mesh for fast computation.
-%'VertNbr' and 'VertNbronering' are neighboring structures of the mesh.
-%'FODrecon' is the spherical harmonics coefficient of the FOD functions
+%'coord' and 'trg' come from a dense spherical mesh, and 'coordM' and 'trgM' represent a sparse mesh for fast computation.
+%'VertNbr' and 'VertNbronering' are neighboring structures of the dense mesh.
+%'FODrecon' represents the spherical harmonics coefficients of the FOD functions.
+%'BS' is the matrix representation of values of spherical harmonics on the dense mesh.
+
+%Output:
+%The first figure is the interpolation by the Fast Approximation.
+%The second figure is the Wasserstein space-based interpolation.
 
 
 load('DATA.mat')
