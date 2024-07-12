@@ -2,22 +2,22 @@ function SPHARcom = foddecomcstr (SPHARMs,VertNbr,BS,Pks,Pkres,SPHARM_Order,coor
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
 
+%'foddecomcstr' is the function that decomposes an FOD function into peak lobes
 %Inputs:
 %'coord' comes from the dense spherical mesh
-%'VertNbronering' is the neighboring structure of the dense mesh
-%'Y0' represents the spherical harmonics coefficients of the FOD function
+%'VertNbr' is the neighboring structure of the dense mesh
+%'SPHARMs' represents the spherical harmonics coefficients of the FOD function
+%'SPHARM Order' is the order of spherical harmonics
 %'BS' is the matrix representation of values of spherical harmonics on the dense mesh
-%'THD; is the cutoff threshold for FOD functions
-%'NumPeaks' is the maximum number of FOD peak lobes
+%'Pks' and 'Pkres' are the index of the peaks on the spherical mesh
 
 %Outputs:
-%'DirVol' and 'FraVol' are the peaks' directions and magnitudes of the FOD function 
-%'peaks' and 'peakres' are the index of the peaks on the spherical mesh
+%'SPHARcom' is the spherical harmonic coefficients of the decomposed peak lobes.
 
 lambda1=10;
 lambda2=10;
