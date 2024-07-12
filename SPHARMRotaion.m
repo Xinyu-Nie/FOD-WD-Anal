@@ -2,10 +2,11 @@ function YR = SPHARMRotaion(Y,Rt,SPHARM_Order,R2C1,C2R1,UY90p,UY90n)
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
+% Rotate spherical harmonic coefficients by matrix Rt
 
 %R2C = Real2complex(SPHARM_Order);
 %C2R = Complex2real(SPHARM_Order);
