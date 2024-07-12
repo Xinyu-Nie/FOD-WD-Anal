@@ -2,10 +2,11 @@ function B = matrixB(A,maxOrder)
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
+%  expand the values of spherical harmonics on spherical locations
 
 %% Input: maxOrder = 0,2,4,6,8
 %         A = matrix of size n x 3  
