@@ -6,9 +6,23 @@ function Sphout = FODFAinterp(weight,DecomFOD,peaks,coord,Sorder,SPHARM_Order,R2
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
-%  Fast Approximation for FOD interpolation
-%  'weight' is the weights for interpolation, and 'DecomFOD' is decomposed peak lobes coefficients.
-%  'peaks' are the peaks indices of the peak lobes on the spherical mesh
+
+%'FODFAinterp' is the Fast Approximation for FOD interpolation
+%Inputs:
+%'DecomFOD' are the spherical harmonics coefficients of the peak lobes
+%'weight' represents the weights for interpolation
+%'peaks' are the peaks indices of the peak lobes on the spherical mesh
+%'coord' comes from the dense spherical mesh
+%'Sorder' is the number of spherical harmonics coefficients 
+%'SPHARM Order' is the highest order of spherical harmonics
+%'Clusters' and 'Cweights' are the labels and weights for all peak-lobe fields
+
+
+%Outputs:
+%'Sphout' are spherical harmonics coefficients of the interpolated FOD function
+
+
+
 
 
 NumPeaks=size(Clusters,2);
