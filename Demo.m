@@ -2,6 +2,13 @@
 %All required data is in DATA.mat.
 %The FOD functions are processed with peak detection and decomposition.
 
+%Functions:
+%'FODcsdpkdetc' is the function that detects the peaks of FODs based on spherical deconvolution.
+%'foddecomcstr' is the function that decomposes FOD functions into peak lobes.
+%'Peaklobesregroup' is the function that regroups FOD peak lobes.
+%'FODFAinterp' is the function that interpolates FOD functions based on the Fast Approximation method.
+%'FODWBinterp'  is the function that interpolates FOD functions based on the Wasserstein distance.
+
 %Variables:
 %'Numpeaks' is the maximum number of peak lobes for FOD functions.
 %'Sorder' is the number of coefficients for Spherical Harmonics.
