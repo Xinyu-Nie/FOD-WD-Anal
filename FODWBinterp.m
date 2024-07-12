@@ -2,11 +2,22 @@ function Sphout = FODWBinterp(weight,DecomFOD,coord,Sorder,Clusters,Cweights)
 % Contribution
 %  Author: Xinyu Nie
 %  Created: 2024/6/1
-%  Copyright:The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
+%  Copyright: The Neuro Image Computing Research (NICR) group at the Mark and Mary Stevens Neuroimaging 
 %  and Informatics Institute of USC Laboratory of NeuroImaging 
 %  USC Stevens Neuroimaging and Informatics Institute
 %  email: xnie@usc.edu
-%Wasserstein Barycenter for FOD function interpolations
+
+
+%'FODFAinterp' is Wasserstein Barycenter for FOD function interpolations
+%Inputs:
+%'weight' represents the weights for interpolation
+%'DecomFOD' are the spherical harmonics coefficients of the peak lobes
+%'coord' comes from the dense spherical mesh
+%'Sorder' is the number of spherical harmonics coefficients 
+%'Clusters' and 'Cweights' are the labels and weights for all peak-lobe fields
+
+%Outputs:
+%'Sphout' are spherical harmonics coefficients of the interpolated FOD function
 
 NumPeaks=size(Clusters,2);
 Sph=zeros(Sorder,NumPeaks);
