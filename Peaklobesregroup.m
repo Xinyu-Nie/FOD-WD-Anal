@@ -48,7 +48,7 @@ if Lenv>0
     end
     Simv=Simv+Simv';
     Y=squareform(Simv);
-    Z = linkage(Y,'average');
+    Z = linkage(Y,'complete');
     %figure
     %dendrogram(Z,'ColorThreshold',25);
     idx = cluster(Z,'cutoff',Ththeta,'Criterion','distance'); 
