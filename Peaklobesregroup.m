@@ -19,7 +19,7 @@ function [Clabel,Cweights,Cmatrix] = Peaklobesregroup(DecomFOD,FracVol,Numpeak,T
 %Outputs:
 %'Clabel' and 'Cweights' are the labels and weights for all peak-lobe fields.
 
-Ththeta=46; %Threshold for clustering
+Ththeta=44; %Threshold for clustering
 Numpoints=size(FracVol,1);
 peaklobes=zeros(Sorder,Numpoints*Numpeak);
 LenPk=zeros(Numpoints,1);
